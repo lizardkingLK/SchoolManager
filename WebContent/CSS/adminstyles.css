@@ -1,0 +1,326 @@
+@charset "ISO-8859-1";
+
+.roundbtn-student {
+	font-family: 'Calibri';
+	background: none;
+	color #ccc;
+	width: 75px;
+	height: 75px;
+	padding: 10px;
+	border-radius: 50%;
+	border: none;
+	transition: .6s;
+	overflow: hidden;
+}
+
+.roundbtn-student:focus {
+	outline: none;
+	transform: scale(.9);
+	background: #5cb85c;
+	color: #f2f2f2;
+}
+
+.roundbtn-student:hover {
+	color: #f2f2f2;
+	background: #5cb85c;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.roundbtn-academic {
+	font-family: 'Calibri';
+	background: none;
+	color #ccc;
+	width: 75px;
+	height: 75px;
+	padding: 10px;
+	border-radius: 50%;
+	border: none;
+	transition: .6s;
+	overflow: hidden;
+}
+
+.roundbtn-academic:focus {
+	outline: none;
+	transform: scale(.9);
+	background: #d9534f;
+	color: #f2f2f2;
+}
+
+.roundbtn-academic:hover {
+	color: #f2f2f2;
+	background: #d9534f;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.roundbtn-nonacademic {
+	font-family: 'Calibri';
+	background: none;
+	color #ccc;
+	width: 75px;
+	height: 75px;
+	padding: 10px;
+	border-radius: 50%;
+	border: none;
+	transition: .6s;
+	overflow: hidden;
+}
+
+.roundbtn-nonacademic:focus {
+	outline: none;
+	transform: scale(.9);
+	background: #428bca;
+	color: #f2f2f2;
+}
+
+.roundbtn-nonacademic:hover {
+	color: #f2f2f2;
+	background: #428bca;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+#mainview {
+	height: 420px;	
+}
+
+table {
+	height: 400px;
+    overflow-y: scroll;
+    display: block;
+    font-size: 12px;
+}
+
+#studenttable td:hover td {
+	transform: scale(1.3);
+	transition: 0.4s;
+	font-family: 'Calibri';
+	font-weight: 1.5; 
+	background: #5cb85c;
+	z-index: 1.1;
+	cursor: pointer;
+	color: #f2f2f2;
+}
+
+#academictable td:hover td {
+	transform: scale(1.3);
+	transition: 0.4s;
+	font-family: 'Calibri';
+	font-weight: 1.5; 
+	background: #d9534f;
+	z-index: 1.1;
+	cursor: pointer;
+	color: #f2f2f2;
+}
+
+#nonacademictable td:hover td {
+	transform: scale(1.3);
+	transition: 0.4s;
+	font-family: 'Calibri';
+	font-weight: 1.5; 
+	background: #428bca;
+	z-index: 1.1;
+	cursor: pointer;
+	color: #f2f2f2;
+}
+
+#subjecttable td:hover td {
+	transform: scale(1.3);
+	transition: 0.4s;
+	font-family: 'Calibri';
+	font-weight: 1.5; 
+	background:  #ffc107;
+	z-index: 1.1;
+	cursor: pointer;
+	color: #f2f2f2;	
+}
+
+#sporttable td:hover td {
+	transform: scale(1.3);
+	transition: 0.4s;
+	font-family: 'Calibri';
+	font-weight: 1.5; 
+	background: #fd7e14;
+	z-index: 1.1;
+	cursor: pointer;
+	color: #f2f2f2;	
+}
+
+/* The Modal (background) */
+.modal {
+  	position: fixed; /* Stay in place */
+  	z-index: 1; /* Sit on top */
+  	left: 0;
+  	top: 0;
+  	width: 100%; /* Full width */
+ 	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* FallBack color */
+	background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #f2f2f2;
+	margin: 4% auto;
+	border: 1px solid #888;
+	width: 90%;
+	height: 80%;
+}
+
+/* The Close Button */
+.close {
+	color: #333;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/*PROFILE*/
+.emp-profile{
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+.profile-img{
+    text-align: center;
+}
+.profile-img img{
+    width: 100%;
+    height: 70%;
+}
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -20%;
+    width: 70%;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    background: #212529b8;
+}
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.profile-head h5{
+    color: #333;
+}
+.profile-head h6{
+    color: #0062cc;
+}
+.profile-edit-btn{
+    border: none;
+    border-radius: 1.5rem;
+    width: 70%;
+    padding: 2%;
+    font-weight: 600;
+    color: #6c757d;
+    cursor: pointer;
+}
+.proile-rating{
+    font-size: 12px;
+    color: #818182;
+    margin-top: 5%;
+}
+.proile-rating span{
+    color: #495057;
+    font-size: 15px;
+    font-weight: 600;
+}
+.profile-head .nav-tabs{
+    margin-bottom:5%;
+}
+.profile-head .nav-tabs .nav-link{
+    font-weight:600;
+    border: none;
+}
+.profile-head .nav-tabs .nav-link.active{
+    border: none;
+    border-bottom:2px solid #0062cc;
+}
+.profile-work{
+    padding: 14%;
+    margin-top: -15%;
+}
+.profile-work p{
+    font-size: 12px;
+    color: #818182;
+    font-weight: 600;
+    margin-top: 10%;
+}
+.profile-work a{
+    text-decoration: none;
+    color: #495057;
+    font-weight: 600;
+    font-size: 14px;
+}
+.profile-work ul{
+    list-style: none;
+}
+.profile-tab label{
+    font-weight: 600;
+}
+.profile-tab p{
+    font-weight: 600;
+    color: #0062cc;
+}
+
+#profilePicture {
+	width: 150px;
+	height: 150px;
+	background: #fff;
+}
+
+/***/
+
+#removewindow {
+  	position: fixed; /* Stay in place */
+  	z-index: 1; /* Sit on top */
+  	left: 0;
+  	top: 0;
+  	width: 100%; /* Full width */
+ 	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* FallBack color */
+	background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+#removewindowbody {
+	background-color: #f2f2f2;
+	margin: 5% auto;
+	border: 1px solid #888;
+	width: 450px;
+	height: 400px;
+}
+
+#assignteacherswindow{
+  	position: fixed; /* Stay in place */
+  	z-index: 1; /* Sit on top */
+  	left: 0;
+  	top: 0;
+  	width: 100%; /* Full width */
+ 	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* FallBack color */
+	background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+#assignteacherswindowbody {
+	background-color: #f2f2f2;
+	margin: 5% auto;
+	border: 1px solid #888;
+	width: 450px;
+	height: 400px;
+}

@@ -1,0 +1,88 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background-color: #f2f2f2;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23f2f2f2'/%3E%3Cstop offset='1' stop-color='%23ffffff'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23f2f2f2' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23f2f2f2' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23f2f2f2' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23f2f2f2' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: cover;
+
+	font-family: 'Barlow', sans-serif;
+	transition: 1s;
+}
+
+h1 {
+	line-height: 36px;
+}
+
+p {
+	font-family: 'Calibri';
+}
+
+li {
+	list-style: none;
+}
+
+.text-small {
+	font-size: 12px;
+}
+
+.text-medium {
+	font-size: 24px;
+}
+
+.text-large {
+	font-size: 36px;
+}
+
+.text-extralarge {
+	font-size: 48px;
+}
+
+.shadow-primary-bottom {
+	box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+.centerAny {
+	position: absolute;
+	top:50%;
+	left:50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.border-thick {
+	border: 2px #333 solid;
+	border-radius: 20px;
+}
+
+.border-thin {
+	border: 1px #333 solid;
+	border-radius: 15px;
+}
+
+.border-none {
+	border-radius: 15px;
+}
+
+#navi {
+	border-bottom: 5px solid #d9534f;
+}
+
+@media(max-width: 600px) {
+	#searchbox {
+		display: none;
+	}
+	
+	#loginform {
+		width: 200px;
+	}
+}
+

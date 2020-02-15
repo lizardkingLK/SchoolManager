@@ -1,0 +1,30 @@
+@charset "ISO-8859-1";
+
+#loginform {
+	width: auto;
+}
+
+#loginform > input[type=text],input[type=password] {
+	border: none;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	line-height:36px;
+	width: 100%;
+	background: transparent;
+	border-bottom: 1px #333 dotted;
+}
+
+#loginform > input[type=submit] {
+	border: none;
+	margin-top: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 15px;
+	line-height:36px;
+	width: 80%;
+}
+
+#loginform > input[type=submit]:hover {
+	transfrom: scale(1.2);
+}

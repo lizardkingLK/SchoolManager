@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<!--dependencies-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet" 
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" 
+href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"> 
+<link rel="stylesheet" href="./CSS/schoolmanagerstyles.css">
+
+<title>School Manager|HOME</title>
+</head>
+
+<body>
+	<div class="bg-info shadow-primary-bottom" id="navi">
+		<div class="p-1">
+			<div class="container">
+				<h2 class="d-inline-flex text-light">Welcome to the school</h2>
+				<a href="./index.html"><small class="d-inline-flex text-light float-right">SchoolManager v1.0</small></a>
+					<div class="spinner-border float-right" id="loader" role="status">
+					  <span class="sr-only">Loading...</span>
+					</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="p-3">
+			<div class="row">
+				<div class="col-sm-9"></div>
+				
+				<div class="col-sm-3">
+					<h4 class="text-center float-left">Login Here </h4>
+					<div class="float-right">
+						<a href="./login.jsp" id="loginbtn" class="btn btn-sm btn-outline-dark text-small">LOGIN</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="p-5"><hr/>
+			<div class="row">
+				<div class="col-sm-4 text-left">
+					<div class="card-body">
+				   		<h4 class="card-title"><i class="fas fa-book-reader"></i> Students</h4>
+				   		<div class="card-text">
+							<ul>
+								<li><a href="./student.jsp">Get Exam Results</a></li>
+								<li><a href="./student.jsp">Edit Profile</a></li>
+								<li><a href="./student.jsp">Check Report</a></li>
+							</ul>
+						</div>
+				 	</div>
+				</div>
+				
+				<div class="col-sm-4 text-center">
+					<div class="card-body">
+					    <h4 class="card-title"><i class="fas fa-chalkboard-teacher"></i> Academic</h4>
+					    <div class="card-text">
+							<ul>
+								<li><a href="./academic.jsp">View Profile</a></li>
+								<li><a href="./academic.jsp">Information on subjects</a></li>
+								<li><a href="./academic.jsp">Add Exam Results</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-4 text-right">
+					<div class="card-body">
+					    <h4 class="card-title"><i class="fas fa-users"></i>Non-Academic</h4>
+					    <div class="card-text">
+							<ul>
+								<li><a href="./nonacademic.jsp">Subjects table</a></li>
+								<li><a href="./nonacademic.jsp">Check for student info</a></li>
+								<li><a href="./nonacademic.jsp">Teachers table</a></li>
+								<li><a href="./nonacademic.jsp">Exams</a></li>
+								<li><a href="./nonacademic.jsp">Assign Teachers</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div><hr/>
+		</div>
+	</div>
+	
+<script type="text/javascript">
+	var loginbtn = document.getElementById("loginbtn");
+	
+	loginbtn.onclick = function() {
+		loader.hidden = false;
+	};
+</script>
+<script type="text/javascript" src="./JS/loader.js"></script>
+</body>
+</html>
